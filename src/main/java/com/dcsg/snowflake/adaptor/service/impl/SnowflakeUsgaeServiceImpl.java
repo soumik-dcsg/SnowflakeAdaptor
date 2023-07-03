@@ -42,7 +42,7 @@ public class SnowflakeUsgaeServiceImpl implements SnowflakeUsgaeService {
 
 		String fileName = "cost_" + new Date().getTime() + ".json";
 		String filePath = System.getProperty("java.io.tmpdir") + "/" + fileName;
-		logger.info(filePath);
+		logger.info("USAGE_FILE_LOCAL_STORAGE_LOCATION="+filePath);
 		File usgae = new File(filePath);
 
 		ObjectMapper objectMapper = new ObjectMapper();
